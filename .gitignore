@@ -1,3 +1,9 @@
+# My
+/.env
+/instructions.txt
+/node_modules
+.DS_Store
+
 # Logs
 logs
 *.log
