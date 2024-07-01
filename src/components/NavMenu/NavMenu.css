@@ -1,0 +1,10 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}

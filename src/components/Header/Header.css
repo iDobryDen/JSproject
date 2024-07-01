@@ -1,0 +1,19 @@
+.header {
+    background-color: aqua;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__title {
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Times New Roman', Times, serif;
+}
