@@ -7,14 +7,9 @@ import './Search.css';
 const Search = () => {
 
     const [startDate, setStartDate] = React.useState(null);
-    const [endDate, setEndDate] = React.useState(null);
 
     const handleStartDateChange = (date) => {
     setStartDate(date);
-    };
-
-    const handleEndDateChange = (date) => {
-    setEndDate(date);
     };
 
     const origins = [
@@ -70,13 +65,6 @@ const Search = () => {
                     dateFormat="MMMM d, yyyy"
                     className='date_choice_picker'
                     placeholderText="Departure Date"
-                />
-                <DatePicker
-                    selected={endDate}
-                    onChange={handleEndDateChange}
-                    dateFormat="MMMM d, yyyy"
-                    className='date_choice_picker'
-                    placeholderText="Return Date"
                 />
             </div>
             <button className='button_search'>Search</button>
