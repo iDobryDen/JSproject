@@ -1,0 +1,37 @@
+.listresult {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.listresult_ul {
+    list-style: none;
+    padding: 10;
+    margin: 10px 0;
+}
+
+.listresult_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 5px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.listresult_header {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.listresult_img {
+    float: right;
+    margin-right: 10px;
+}

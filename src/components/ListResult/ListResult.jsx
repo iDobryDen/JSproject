@@ -4,16 +4,39 @@ import './ListResult.css'
 
 const ListResult = ({ tickets }) => {
     if (!tickets || tickets.length === 0) {
-        return <p>No tickets found</p>;
+        return <p className='no-found'>No tickets found</p>;
     }
     return (
-        <ul>
-            {tickets.map((ticket, index) => (
-                <li key={index}>
-                    From: {ticket.origin} to {ticket.destination} on {ticket.departure_at} - Price: {ticket.price}
-                </li>
-            ))}
-        </ul>
+        
+            <ul className='listresult_ul'>
+                {tickets.map((ticket, index) => (
+                <div className='listresult'>
+                    <li key={index} className='listresult_li'>
+                        <div className='listresult_header'>
+                            <div className='listresult_price'>
+                                <h3 className='listresult_h3'>$ {ticket.price}</h3>
+                                <p className='listresult_2_per'>for 2 person</p>
+                            </div>
+                            <img src="" alt="avialogo" className='listresult_img'/>
+                        </div>
+                        <div className='listresult_start'>
+                            <h5 className='listresult_city'>{ticket.origin}</h5><p className='listresult_time'>10:05</p><h6 className='listresult_date'>{ticket.departure_at}</h6>
+                        </div>
+                        <div className='listresult_li'>
+                            <p>8ч 20мин в пути</p>
+                            <p>без пересадок</p>
+                        </div>
+                        <div className='listresult_li'>
+                            <h5 className='listresult_city'>{ticket.destination}</h5><p className='listresult_time'>18:35</p><h6 className='listresult_date'>{ticket.departure_at}</h6>
+                        </div>
+                        <div className='listresult_bag'>
+                            <img src="" alt="bagagelogo" className='listresult_bag_img'/>
+                        </div>
+                    </li>
+                </div>
+                ))}
+            </ul>
+        
     );
 };
 
