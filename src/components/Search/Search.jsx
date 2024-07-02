@@ -18,15 +18,15 @@ const Search = () => {
     };
 
     const origins = [
-        { value: 'MSK', label: 'Moscow' },
-        { value: 'IZK', label: 'Izhevsk' },
+        { value: 'MOW', label: 'Moscow' },
+        { value: 'DXB', label: 'Dubai' },
         { value: 'KZN', label: 'Kazan' },
     ];
 
     const destinations = [
         { value: 'HKT', label: 'Phuket' },
-        { value: 'SCH', label: 'Sochi' },
-        { value: 'DHB', label: 'Dubai' },
+        { value: 'MOW', label: 'Moscow' },
+        { value: 'DXB', label: 'Dubai' },
     ];
 
     const persons = [
