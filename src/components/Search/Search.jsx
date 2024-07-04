@@ -41,7 +41,7 @@ const Search = () => {
     const ticketsAvailable = [
         { origin: 'MOW', destination: 'HKT', departure_at: '2023-07-15', price: 10000 },
         { origin: 'MOW', destination: 'DXB', departure_at: '2023-08-01', price: 15000 },
-        { origin: 'SVO', destination: 'HKT', departure_at: '2023-09-10', price: 12000 },
+        { origin: 'KZN', destination: 'HKT', departure_at: '2023-09-10', price: 12000 },
     ];
 
     const handleOriginChange = (event) => {

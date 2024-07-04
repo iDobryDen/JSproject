@@ -35,3 +35,27 @@
     float: right;
     margin-right: 10px;
 }
+
+.listresult_start_end {
+    display: flex;
+    flex-direction: column;
+}
+
+.listresult_line {
+    display: flex;
+    flex-direction: column;
+}
+
+.listresult_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.listresult_time {
+    font-size: 27px;
+}

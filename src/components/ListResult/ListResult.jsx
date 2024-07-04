@@ -19,18 +19,21 @@ const ListResult = ({ tickets }) => {
                             </div>
                             <img src="" alt="avialogo" className='listresult_img'/>
                         </div>
-                        <div className='listresult_start'>
-                            <h5 className='listresult_city'>{ticket.origin}</h5><p className='listresult_time'>10:05</p><h6 className='listresult_date'>{ticket.departure_at}</h6>
-                        </div>
-                        <div className='listresult_li'>
-                            <p>8ч 20мин в пути</p>
-                            <p>без пересадок</p>
-                        </div>
-                        <div className='listresult_li'>
-                            <h5 className='listresult_city'>{ticket.destination}</h5><p className='listresult_time'>18:35</p><h6 className='listresult_date'>{ticket.departure_at}</h6>
-                        </div>
-                        <div className='listresult_bag'>
-                            <img src="" alt="bagagelogo" className='listresult_bag_img'/>
+                        <div className='listresult_body'>
+                            <div className='listresult_start_end'>
+                                <h5 className='listresult_city'>{ticket.origin}</h5>
+                                <p className='listresult_time'>10:05</p>
+                                <h6 className='listresult_date'>{ticket.departure_at}</h6>
+                            </div>
+                            <div className='listresult_line'>
+                                <p>8ч 20мин в пути</p>
+                                <p>без пересадок</p>
+                            </div>
+                            <div className='listresult_start_end'>
+                                <h5 className='listresult_city'>{ticket.destination}</h5>
+                                <p className='listresult_time'>18:35</p>
+                                <h6 className='listresult_date'>{ticket.departure_at}</h6>
+                            </div>
                         </div>
                     </li>
                 </div>
