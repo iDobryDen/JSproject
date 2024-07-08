@@ -104,4 +104,8 @@ h3 {
     background-color: #8e8e93;
     margin-top: 3px;
     margin-bottom: 2px;
-  }
+}
+
+.listresult_h3 {
+    color: #000000;
+}
