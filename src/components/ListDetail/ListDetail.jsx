@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import myImage from './Aeroflot_full.jpg';
+import myImage from '../assets/img/Aeroflot_full.jpg';
 
 import './ListDetail.css'
 

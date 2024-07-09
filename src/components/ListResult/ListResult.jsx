@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import myImage from './Aeroflot.png';
+import myImage from '../assets/img/Aeroflot.png';
 
 import './ListResult.css'
 
