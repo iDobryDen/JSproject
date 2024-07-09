@@ -30,7 +30,7 @@ function App() {
         <Routes>
             {/* <Header /> */}
             {/* <Route path="/" element={<Search tickets={tickets} />} /> */}
-            <Route path="/" element={<ListResult tickets={tickets} />} />
+            <Route path="/result/" element={<ListResult tickets={tickets} />} />
             <Route path="/ticket/:ticketId" element={<ListDetail tickets={tickets} />} />
         </Routes>
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import myImage from '../assets/img/Aeroflot_full.jpg';
 
 import './ListDetail.css'
@@ -16,6 +16,9 @@ const ListDetail = ({ tickets }) => {
 
     return (
                 <div className='list_detail'>
+                    <Link to={`/result/`} >
+                        <button className='back'> Back </button>
+                    </Link>
                     <h3>FLIGHT DETAIL</h3>
                     <div className='flight_detail'>
                         <div className='flight_detail_header'>

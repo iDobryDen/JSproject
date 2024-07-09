@@ -3,6 +3,16 @@ h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.back {
+    color: #007bff;
+    font-size: 17px;
+    border: none;
+    background-color: #e3e3e5;
+    width: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
 .list_detail {
     display: flex;
     flex-direction: column;
