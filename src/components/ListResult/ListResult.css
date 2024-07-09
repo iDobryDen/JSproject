@@ -8,13 +8,14 @@ h3 {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 10px;
-    margin-top: 3px;
+    margin-top: 6px;
     text-decoration: none;
+    width: 100%;
 }
 
 .listresult_ul {
     list-style: none;
-    padding: 10;
+    padding: 20px;
     margin: 1px 0;
 }
 
@@ -66,9 +67,8 @@ h3 {
 
 .listresult_line_hr {
     width: calc(100% - 2 * 10px); /* Ширина линии: ширина родительского элемента минус 20px (отступы img) */
-    height: 1px;
     background-color: #ddd;
-    margin: 5px 0; /* Отступы сверху и снизу */
+    border: none;
   }
 
 .listresult_body {
@@ -100,10 +100,7 @@ h3 {
 
 .listresult_line_hr {
     width: 100%;
-    height: 1px;
     background-color: #8e8e93;
-    margin-top: 3px;
-    margin-bottom: 2px;
 }
 
 .listresult_h3 {

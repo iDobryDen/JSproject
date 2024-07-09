@@ -7,7 +7,7 @@ import './ListResult.css'
 const ListResult = ({ tickets }) => {
 
     const Line = () => (
-        <hr className="listresult_line_hr" />
+        <hr size='3' className="listresult_line_hr" />
     );      
 
     if (!tickets || tickets.length === 0) {
@@ -34,7 +34,7 @@ const ListResult = ({ tickets }) => {
                         </div>
                         <div className='listresult_line'>
                             <p>8ч 20мин в пути</p>
-                            <Line className='listresult_line_hr'/> {/* Вставляем компонент линии */}
+                            <Line className='listresult_line_hr'/>
                             <p>без пересадок</p>
                         </div>
                         <div className='listresult_start_end'>
