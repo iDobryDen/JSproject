@@ -6,7 +6,7 @@ import ListResult from "../ListResult/ListResult";
 
 import './Search.css';
 
-const Search = () => {
+const Search = ({  }) => {
 
     const [startDate, setStartDate] = React.useState(null);
     const [selectedOrigin, setSelectedOrigin] = useState('');
@@ -38,15 +38,6 @@ const Search = () => {
         { value: '5', label: '5' },
     ];
 
-    const ticketsAvailable = [
-        { origin: 'MOW', destination: 'HKT', departure_at: '2023-07-15', price: 10000 },
-        { origin: 'MOW', destination: 'DXB', departure_at: '2023-08-01', price: 15000 },
-        { origin: 'HKT', destination: 'MOW', departure_at: '2023-09-10', price: 12000 },
-        { origin: 'HKT', destination: 'KZN', departure_at: '2023-09-10', price: 25000 },
-        { origin: 'KZN', destination: 'HKT', departure_at: '2023-09-10', price: 9000 },
-        { origin: 'KZN', destination: 'MOW', departure_at: '2023-09-10', price: 19000 },
-    ];
-
     const handleOriginChange = (event) => {
         setSelectedOrigin(event.target.value);
     };
@@ -57,24 +48,6 @@ const Search = () => {
 
     const handlePersonChange = (event) => {
         setSelectedPerson(event.target.value);
-    };
-
-    useEffect(() => {
-        fetchTicketsFromFile();
-    }, []);
-
-    const fetchTicketsFromFile = async () => {
-        try {
-            const response = await fetch('tickets.txt');
-            const text = await response.text();
-            const ticketData = text.split('\n').map(line => {
-                const [origin, destination, departure_at, price] = line.split(',');
-                return { origin, destination, departure_at, price };
-            });
-            setTickets(ticketData);
-        } catch (error) {
-            console.error('Ошибка при загрузке билетов:', error);
-        }
     };
 
     const handleSearch = () => {
@@ -134,8 +107,6 @@ const Search = () => {
                 <button className='result_list_settings_button'>Filtrs</button>
                 <button className='result_list_settings_button'>Sort</button>
             </div> 
-            {/* Отображение результата поиска */}
-            <ListResult tickets={ticketsAvailable} /> 
         </div>
     )
 }
