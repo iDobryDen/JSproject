@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import myImage from './Aeroflot_full.jpg';
 
 import './ListDetail.css'
 
@@ -33,23 +34,23 @@ const ListDetail = ({ tickets }) => {
                     <h3 className='there_h3'>THERE</h3>
                     <div className='flight_detail'>
                     <div className='there_header'>
-                        <img src="/assets/img/Aeroflot_full.jpg" alt="avialogo" className='flight_detail_img'/>
+                        <img src={ myImage } alt="avialogo" className='flight_detail_img'/>
                         <div className='flight_num'>
                         <p className='flight_num_p'>flight № </p>
                         <h3 className='flight_detail_h3'> MU 8648</h3>
                         </div>
                     </div>
-                    <div className='flight_detail_container'> {/* Новый контейнер */}
+                    <div className='flight_detail_container'>
                         <div className='flight_detail_line'> {/* Вертикальная линия */}</div>
                             <div className='flight_detail_body'>
                                 <div className='origin'>
                                     <div className='origin_first'>
                                         <div className='origin_date_time'>
                                             <p className='origin_main'>21:05</p>
-                                            <h6 className='additionally'>{ticket.departure_at}</h6>
+                                            <span className='additionally-date'>{ticket.departure_at}</span>
                                         </div>
                                         <div>
-                                            <p className='origin_main'>Moscow Russia</p>
+                                            <p className='origin_main'>{ticket.origin_city_country}</p>
                                             <p className='additionally'>{ticket.origin}, Sheremetevo</p>
                                         </div>
                                     </div>
@@ -59,7 +60,7 @@ const ListDetail = ({ tickets }) => {
                                     <div className='origin_first'>
                                         <div className='origin_date_time'>
                                             <p className='origin_main'>10:35</p>
-                                            <h6 className='additionally'>{ticket.departure_at}</h6>
+                                            <span className='additionally-date'>{ticket.departure_at}</span>
                                         </div>
                                         <div>
                                             <p className='origin_main'>Phuket Thailand</p>

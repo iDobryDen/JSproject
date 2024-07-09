@@ -13,12 +13,12 @@ function App() {
     const [tickets, setTickets] = useState([]);
 
     const ticketsAvailable = [
-        { id: 1, origin: 'MOW', destination: 'HKT', departure_at: '2023-07-15', price: 10000 },
-        { id: 2, origin: 'MOW', destination: 'DXB', departure_at: '2023-08-01', price: 15000 },
-        { id: 3, origin: 'HKT', destination: 'MOW', departure_at: '2023-09-10', price: 12000 },
-        { id: 4, origin: 'HKT', destination: 'KZN', departure_at: '2023-09-10', price: 25000 },
-        { id: 5, origin: 'KZN', destination: 'HKT', departure_at: '2023-09-10', price: 9000 },
-        { id: 6, origin: 'KZN', destination: 'MOW', departure_at: '2023-09-10', price: 19000 },
+        { id: 1, origin: 'MOW', origin_city_country: 'Moscow Russia', destination: 'HKT', departure_at: '2023-07-15', price: 10000 },
+        { id: 2, origin: 'MOW', origin_city_country: 'Moscow Russia', destination: 'DXB', departure_at: '2023-08-01', price: 15000 },
+        { id: 3, origin: 'HKT', origin_city_country: 'Phuket Thailand', destination: 'MOW', departure_at: '2023-09-10', price: 12000 },
+        { id: 4, origin: 'HKT', origin_city_country: 'Phuket Thailand', destination: 'KZN', departure_at: '2023-09-10', price: 25000 },
+        { id: 5, origin: 'KZN', origin_city_country: 'Kazan Russia', destination: 'HKT', departure_at: '2023-09-10', price: 9000 },
+        { id: 6, origin: 'KZN', origin_city_country: 'Kazan Russia', destination: 'MOW', departure_at: '2023-09-10', price: 19000 },
       ];
     
     useEffect(() => {

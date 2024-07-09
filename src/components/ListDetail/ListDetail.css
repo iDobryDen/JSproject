@@ -101,7 +101,7 @@ h3 {
 }
 
 .origin_main {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .additionally {
@@ -110,6 +110,15 @@ h3 {
     position: relative;
     bottom: 6px;
     padding-right: 1px;
+}
+
+.additionally-date{
+    font-size: 14px;
+    color: #8e8e93;
+    position: relative;
+    bottom: 6px;
+    padding-right: 1px;
+    text-align: end;
 }
 
 .origin_first {
