@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-import ListResult from "../ListResult/ListResult";
-
 import './Search.css';
 
 const Search = ({  }) => {

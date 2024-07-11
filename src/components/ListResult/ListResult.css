@@ -106,3 +106,12 @@ h3 {
 .listresult_h3 {
     color: #000000;
 }
+
+.result_list_settings {
+    background-color: #f2f2f7;
+}
+
+.result_list_settings_button {
+    background-color: #f2f2f7;
+    color: #8e8e93;
+}

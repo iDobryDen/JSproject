@@ -59,3 +59,11 @@
 .button_search:hover {
     background-color: 0056b3;
 }
+
+.result_list_settings {
+    background-color: #f2f2f7;
+}
+
+.result_list_settings_button {
+    background-color: #f2f2f7;
+}

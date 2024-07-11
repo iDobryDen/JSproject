@@ -16,6 +16,10 @@ const ListResult = ({ tickets }) => {
     return (
         <ul className='listresult_ul'>
             <h3>SEARCHING RESULTS</h3>
+            <div className='result_list_settings'>
+                <button className='result_list_settings_button'>Filtrs</button>
+                <button className='result_list_settings_button'>Sort</button>
+            </div> 
             {tickets.map((ticket, index) => (
             <Link to={`/ticket/${ticket.id}`} key={index} className='listresult' >
                 <li key={index} className='listresult_li'>
