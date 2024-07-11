@@ -1,26 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import SortMenu from '../SortMenu/SortMenu';
 import myImage from '../assets/img/Aeroflot.png';
 
 import './ListResult.css'
 
 const ListResult = ({ tickets }) => {
+    console.log(tickets);
+    const [sortedTickets, setSortedTickets] = useState(tickets);
+    const [showSortMenu, setShowSortMenu] = useState(false);
+
+    useEffect(() => {
+        setSortedTickets(tickets)
+    }, [tickets])
+
+    const handleSortChange = (sortType) => {
+        let newTickets = [...tickets]; // Create a copy of the original tickets array
+    
+        if (sortType === 'price') {
+          newTickets.sort((a, b) => a.price - b.price);
+        }
+        setSortedTickets(newTickets);
+      };
 
     const Line = () => (
         <hr size='3' className="listresult_line_hr" />
     );      
 
-    if (!tickets || tickets.length === 0) {
+    if (!sortedTickets || sortedTickets.length === 0) {
         return <p className='no-found'>No tickets found</p>;
     }
+
     return (
-        <ul className='listresult_ul'>
+        <div className='listresult_div'>
             <h3>SEARCHING RESULTS</h3>
             <div className='result_list_settings'>
                 <button className='result_list_settings_button'>Filtrs</button>
-                <button className='result_list_settings_button'>Sort</button>
+                <button className='result_list_settings_button' onClick={() => setShowSortMenu(true)}>Sort</button>
             </div> 
-            {tickets.map((ticket, index) => (
+            <ul className='listresult_ul'>
+            {sortedTickets.map((ticket, index) => (
             <Link to={`/ticket/${ticket.id}`} key={index} className='listresult' >
                 <li key={index} className='listresult_li'>
                     <div className='listresult_header'>
@@ -51,6 +70,14 @@ const ListResult = ({ tickets }) => {
             </Link> 
             ))}
         </ul>
+        {showSortMenu && (
+            <SortMenu
+                isOpen={showSortMenu}
+                onClose={() => setShowSortMenu(false)} // Close the modal
+                onSortChange={handleSortChange}
+            />
+            )}
+        </div>
     );
 };
 

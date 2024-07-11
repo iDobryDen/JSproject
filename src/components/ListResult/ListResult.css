@@ -13,10 +13,13 @@ h3 {
     width: 100%;
 }
 
-.listresult_ul {
-    list-style: none;
+.listresult_div {
     padding: 20px;
     margin: 1px 0;
+}
+
+.listresult_ul {
+    list-style: none;
 }
 
 .listresult_price {

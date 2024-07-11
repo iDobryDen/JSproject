@@ -1,0 +1,32 @@
+.sort_menu_content {
+    width: 120px;
+    background-color: #f2f2f7;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    margin-right: 5px;
+    position: fixed;
+    left: 240px;
+    right: 0;
+    top: 70px;
+}
+
+.sort_menu_close {
+    color: #007bff;
+    font-size: 17px;
+    border: none;
+    background-color: #e3e3e5;
+    width: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sort_button {
+    width: 90%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
